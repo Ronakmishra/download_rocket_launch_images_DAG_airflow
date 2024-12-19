@@ -355,3 +355,220 @@
 [2024-12-19T22:08:43.573+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:43.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-12-19T22:08:43.582+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:43.582+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
 [2024-12-19T22:08:43.592+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.059 seconds
+[2024-12-19T22:09:13.713+0000] {processor.py:186} INFO - Started process (PID=3522) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:09:13.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:09:13.717+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:09:13.717+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:09:13.723+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:09:13.737+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:09:13.737+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:09:13.745+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:09:13.745+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:09:13.755+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.048 seconds
+[2024-12-19T22:09:44.753+0000] {processor.py:186} INFO - Started process (PID=3589) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:09:44.754+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:09:44.757+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:09:44.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:09:44.763+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:09:44.775+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:09:44.774+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:09:44.781+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:09:44.781+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:09:44.794+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.046 seconds
+[2024-12-19T22:10:14.966+0000] {processor.py:186} INFO - Started process (PID=3656) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:10:14.967+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:10:14.970+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:10:14.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:10:14.978+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:10:14.993+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:10:14.993+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:10:15.000+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:10:15.000+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:10:15.011+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.050 seconds
+[2024-12-19T22:10:45.087+0000] {processor.py:186} INFO - Started process (PID=3723) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:10:45.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:10:45.090+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:10:45.090+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:10:45.097+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:10:45.110+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:10:45.110+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:10:45.117+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:10:45.117+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:10:45.125+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.043 seconds
+[2024-12-19T22:11:15.314+0000] {processor.py:186} INFO - Started process (PID=3790) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:11:15.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:11:15.316+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:11:15.316+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:11:15.327+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:11:15.342+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:11:15.342+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:11:15.349+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:11:15.349+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:11:15.359+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.051 seconds
+[2024-12-19T22:11:45.626+0000] {processor.py:186} INFO - Started process (PID=3857) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:11:45.628+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:11:45.631+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:11:45.631+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:11:45.637+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:11:45.654+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:11:45.654+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:11:45.665+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:11:45.665+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:11:45.675+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.054 seconds
+[2024-12-19T22:12:15.914+0000] {processor.py:186} INFO - Started process (PID=3924) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:12:15.915+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:12:15.918+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:12:15.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:12:15.929+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:12:15.944+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:12:15.944+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:12:15.952+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:12:15.951+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:12:15.961+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.054 seconds
+[2024-12-19T22:12:46.041+0000] {processor.py:186} INFO - Started process (PID=3991) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:12:46.042+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:12:46.044+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:12:46.044+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:12:46.052+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:12:46.069+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:12:46.069+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:12:46.077+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:12:46.077+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:12:46.089+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.054 seconds
+[2024-12-19T22:13:16.157+0000] {processor.py:186} INFO - Started process (PID=4058) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:13:16.158+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:13:16.162+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:13:16.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:13:16.166+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:13:16.178+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:13:16.178+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:13:16.184+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:13:16.184+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:13:16.196+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.041 seconds
+[2024-12-19T22:13:46.886+0000] {processor.py:186} INFO - Started process (PID=4109) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:13:46.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:13:46.891+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:13:46.891+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:13:46.906+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:13:46.917+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:13:46.917+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:13:46.925+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:13:46.925+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:13:46.934+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.055 seconds
+[2024-12-19T22:14:16.977+0000] {processor.py:186} INFO - Started process (PID=4176) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:14:16.979+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:14:16.980+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:14:16.980+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:14:16.984+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:14:16.992+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:14:16.992+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:14:16.997+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:14:16.997+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:14:17.005+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.030 seconds
+[2024-12-19T22:14:47.045+0000] {processor.py:186} INFO - Started process (PID=4207) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:14:47.047+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:14:47.048+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:14:47.048+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:14:47.058+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:14:47.070+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:14:47.070+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:14:47.082+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:14:47.082+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:14:47.094+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.053 seconds
+[2024-12-19T22:15:17.411+0000] {processor.py:186} INFO - Started process (PID=4275) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:15:17.412+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:15:17.413+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:15:17.413+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:15:17.420+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:15:17.433+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:15:17.433+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:15:17.441+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:15:17.441+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:15:17.448+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.043 seconds
+[2024-12-19T22:15:47.519+0000] {processor.py:186} INFO - Started process (PID=4342) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:15:47.520+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:15:47.522+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:15:47.521+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:15:47.526+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:15:47.534+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:15:47.534+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:15:47.539+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:15:47.539+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:15:47.546+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.030 seconds
+[2024-12-19T22:16:17.856+0000] {processor.py:186} INFO - Started process (PID=4409) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:16:17.857+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:16:17.858+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:16:17.858+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:16:17.861+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:16:17.869+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:16:17.869+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:16:17.874+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:16:17.874+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:16:17.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.028 seconds
+[2024-12-19T22:16:48.250+0000] {processor.py:186} INFO - Started process (PID=4476) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:16:48.251+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:16:48.252+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:16:48.252+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:16:48.255+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:16:48.262+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:16:48.262+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:16:48.267+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:16:48.267+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:16:48.273+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.025 seconds
+[2024-12-19T22:17:18.555+0000] {processor.py:186} INFO - Started process (PID=4543) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:17:18.556+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:17:18.558+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:17:18.557+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:17:18.564+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:17:18.576+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:17:18.576+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:17:18.582+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:17:18.582+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:17:18.588+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.038 seconds
+[2024-12-19T22:17:49.377+0000] {processor.py:186} INFO - Started process (PID=4610) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:17:49.379+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:17:49.381+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:17:49.381+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:17:49.388+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:17:49.400+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:17:49.400+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:17:49.408+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:17:49.407+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:17:49.414+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.043 seconds
+[2024-12-19T22:18:19.869+0000] {processor.py:186} INFO - Started process (PID=4677) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:18:19.871+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:18:19.873+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:18:19.872+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:18:19.879+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:18:19.891+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:18:19.891+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:18:19.898+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:18:19.898+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:18:19.905+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.040 seconds
+[2024-12-19T22:18:50.395+0000] {processor.py:186} INFO - Started process (PID=4744) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:18:50.396+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:18:50.398+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:18:50.398+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:18:50.404+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:18:50.415+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:18:50.415+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:18:50.422+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:18:50.422+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:18:50.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.039 seconds
+[2024-12-19T22:19:20.887+0000] {processor.py:186} INFO - Started process (PID=4812) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:19:20.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:19:20.890+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:19:20.890+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:19:20.896+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:19:20.908+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:19:20.908+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:19:20.915+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:19:20.915+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:19:20.922+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.041 seconds
+[2024-12-19T22:19:51.202+0000] {processor.py:186} INFO - Started process (PID=4879) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:19:51.203+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:19:51.205+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:19:51.205+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:19:51.210+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:19:51.219+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:19:51.219+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:19:51.226+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:19:51.226+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:19:51.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.035 seconds
+[2024-12-19T22:20:21.517+0000] {processor.py:186} INFO - Started process (PID=4946) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:20:21.518+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:20:21.520+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:20:21.520+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:20:21.528+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:20:21.540+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:20:21.540+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:20:21.548+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:20:21.548+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:20:21.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.046 seconds
+[2024-12-19T22:20:52.098+0000] {processor.py:186} INFO - Started process (PID=5013) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:20:52.100+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:20:52.101+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:20:52.101+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:20:52.107+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:20:52.119+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:20:52.119+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:20:52.125+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:20:52.125+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:20:52.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.039 seconds
+[2024-12-19T22:21:22.577+0000] {processor.py:186} INFO - Started process (PID=5080) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:21:22.578+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:21:22.580+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:21:22.580+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:21:22.587+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:21:22.600+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:21:22.599+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:21:22.606+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:21:22.606+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:21:22.614+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.044 seconds
+[2024-12-19T22:21:53.187+0000] {processor.py:186} INFO - Started process (PID=5147) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:21:53.188+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:21:53.190+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:21:53.190+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:21:53.196+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:21:53.216+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:21:53.216+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:21:53.224+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:21:53.224+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:21:53.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.049 seconds
+[2024-12-19T22:22:23.620+0000] {processor.py:186} INFO - Started process (PID=5214) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:22:23.622+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:22:23.624+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:22:23.624+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:22:23.629+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:22:23.641+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:22:23.641+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:22:23.648+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:22:23.648+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:22:23.654+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.041 seconds
+[2024-12-19T22:22:54.058+0000] {processor.py:186} INFO - Started process (PID=5281) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:22:54.060+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:22:54.062+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:22:54.062+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:22:54.068+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:22:54.080+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:22:54.080+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:22:54.086+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:22:54.086+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:22:54.093+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.039 seconds
+[2024-12-19T22:23:24.388+0000] {processor.py:186} INFO - Started process (PID=5348) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:23:24.389+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:23:24.390+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:23:24.390+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:23:24.397+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:23:24.408+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:23:24.408+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:23:24.415+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:23:24.415+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:23:24.422+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.040 seconds
+[2024-12-19T22:23:54.844+0000] {processor.py:186} INFO - Started process (PID=5415) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:23:54.847+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:23:54.849+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:23:54.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:23:54.855+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:23:54.867+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:23:54.867+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:23:54.874+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:23:54.874+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:23:54.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.042 seconds
+[2024-12-19T22:24:25.227+0000] {processor.py:186} INFO - Started process (PID=5482) to work on /opt/airflow/dags/website_events.py
+[2024-12-19T22:24:25.228+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/website_events.py for tasks to queue
+[2024-12-19T22:24:25.230+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:24:25.229+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/website_events.py
+[2024-12-19T22:24:25.235+0000] {processor.py:925} INFO - DAG(s) '01_unschedulled' retrieved from /opt/airflow/dags/website_events.py
+[2024-12-19T22:24:25.244+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:24:25.244+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:24:25.251+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:24:25.251+0000] {dag.py:4180} INFO - Setting next_dagrun for 01_unschedulled to None, run_after=None
+[2024-12-19T22:24:25.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/website_events.py took 0.037 seconds

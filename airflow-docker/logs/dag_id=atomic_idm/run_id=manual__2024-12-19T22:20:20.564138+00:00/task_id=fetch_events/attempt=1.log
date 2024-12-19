@@ -1,0 +1,34 @@
+[2024-12-19T22:20:22.157+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T22:20:22.162+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: atomic_idm.fetch_events manual__2024-12-19T22:20:20.564138+00:00 [queued]>
+[2024-12-19T22:20:22.164+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: atomic_idm.fetch_events manual__2024-12-19T22:20:20.564138+00:00 [queued]>
+[2024-12-19T22:20:22.164+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-19T22:20:22.237+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): fetch_events> on 2024-12-19 22:20:20.564138+00:00
+[2024-12-19T22:20:22.240+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1072) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-19T22:20:22.241+0000] {standard_task_runner.py:72} INFO - Started process 1073 to run task
+[2024-12-19T22:20:22.241+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'atomic_idm', 'fetch_events', 'manual__2024-12-19T22:20:20.564138+00:00', '--job-id', '261', '--raw', '--subdir', 'DAGS_FOLDER/atomicity_idempotency.py', '--cfg-path', '/tmp/tmpevww_jba']
+[2024-12-19T22:20:22.242+0000] {standard_task_runner.py:105} INFO - Job 261: Subtask fetch_events
+[2024-12-19T22:20:22.259+0000] {task_command.py:467} INFO - Running <TaskInstance: atomic_idm.fetch_events manual__2024-12-19T22:20:20.564138+00:00 [running]> on host 447a91cba43e
+[2024-12-19T22:20:22.287+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='atomic_idm' AIRFLOW_CTX_TASK_ID='fetch_events' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T22:20:20.564138+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T22:20:20.564138+00:00'
+[2024-12-19T22:20:22.287+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-19T22:20:22.287+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-19T22:20:22.287+0000] {logging_mixin.py:190} INFO - Current task name:fetch_events state:running start_date:2024-12-19 22:20:22.162718+00:00
+[2024-12-19T22:20:22.287+0000] {logging_mixin.py:190} INFO - Dag name:atomic_idm and current dag run status:running
+[2024-12-19T22:20:22.287+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T22:20:22.288+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2024-12-19T22:20:22.288+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -o /tmp/data/events_2024-12-19.json http://events_api:5000/events?start_date=2024-12-18&end_date=2024-12-19']
+[2024-12-19T22:20:22.293+0000] {subprocess.py:99} INFO - Output:
+[2024-12-19T22:20:22.297+0000] {subprocess.py:106} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-12-19T22:20:22.298+0000] {subprocess.py:106} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-12-19T22:20:22.308+0000] {subprocess.py:106} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 24985  100 24985    0     0  2341k      0 --:--:-- --:--:-- --:--:-- 2439k
+[2024-12-19T22:20:22.309+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2024-12-19T22:20:22.317+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T22:20:22.317+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=atomic_idm, task_id=fetch_events, run_id=manual__2024-12-19T22:20:20.564138+00:00, execution_date=20241219T222020, start_date=20241219T222022, end_date=20241219T222022
+[2024-12-19T22:20:22.322+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-19T22:20:22.322+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-19T22:20:22.322+0000] {logging_mixin.py:190} INFO - Dag name:atomic_idm queued_at:2024-12-19 22:20:20.571100+00:00
+[2024-12-19T22:20:22.322+0000] {logging_mixin.py:190} INFO - Task hostname:447a91cba43e operator:BashOperator
+[2024-12-19T22:20:22.341+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-19T22:20:22.352+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T22:20:22.353+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

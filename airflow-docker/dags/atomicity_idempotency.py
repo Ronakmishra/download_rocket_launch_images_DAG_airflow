@@ -7,6 +7,7 @@ from airflow import DAG
 from airflow.operators.bash  import BashOperator
 from airflow.operators.python import PythonOperator
 
+# -----------------------------------------------------
 dag =DAG(
     dag_id = "atomic_idm",
     # schedule_interval ="@daily",
@@ -14,6 +15,7 @@ dag =DAG(
     # end_date=dt.datetime(year=2024,month=11, day=19),
     catchup= True
 )
+# -----------------------------------------------------
 
 fetch_events = BashOperator(
     task_id = "fetch_events",
@@ -24,12 +26,7 @@ fetch_events = BashOperator(
     ),
     dag=dag,
 )
-
-def _email_stats(stats, email):
-    """Send an Email"""
-    print(f"Sending stats to {email}")
-    # stats = pd.read_csv(context["templates_dict"]["stats_path"])
-    # email_stats(stats, email=email)
+# -----------------------------------------------------
 
 def __calculate_stats(**context):
     """Calculates event statistics."""
@@ -42,7 +39,10 @@ def __calculate_stats(**context):
     Path(output_path).parent.mkdir(exist_ok=True)
     stats.to_csv(output_path, index=False)
 
-    _email_stats(stats, email="ronak.mishra404@gmail.com") #send email
+    # _email_stats(stats, email="ronak.mishra404@gmail.com") #send email
+    
+
+# -----------------------------------------------------
     
 _calculate_stats =PythonOperator(
     task_id ="calculate_Stats",
@@ -54,4 +54,25 @@ _calculate_stats =PythonOperator(
     dag=dag,
 )
 
-fetch_events >> _calculate_stats
+# -----------------------------------------------------
+
+def _email_stats(stats, email):
+    """Send an Email"""
+    print(f"Sending stats to {email}")
+    # stats = pd.read_csv(context["templates_dict"]["stats_path"])
+    # email_stats(stats, email=email)
+
+def _send_stats(email, **context):
+    stats = pd.read_csv(context["templates_dict"]["output_path"])
+    _email_stats(stats, email=email)
+
+send_stats= PythonOperator(
+    task_id ='send_stats',
+    python_callable= _send_stats,
+    op_kwargs={"email":"ronak.mishra404@gmail.com"},
+    templates_dict={
+        "output_path":"/tmp/data/output_{{ds}}.csv"
+    }
+)    
+
+fetch_events >> _calculate_stats >> send_stats
