@@ -18,8 +18,8 @@ dag =DAG(
 fetch_events = BashOperator(
     task_id = "fetch_events",
     bash_command=(
-        "curl -o /tmp/data/events.json_{{ds}} http://events_api:5000/events?"
-        "start_date=2024-12-19&end_date=2024-12-20"
+        "curl -o /tmp/data/events_{{ds}}.json http://events_api:5000/events?"
+        "start_date=2024-12-18&end_date=2024-12-19"
         
     ),
     dag=dag,
@@ -27,7 +27,7 @@ fetch_events = BashOperator(
 
 def _email_stats(stats, email):
     """Send an Email"""
-    print("Sendigf stats to {email}")
+    print(f"Sending stats to {email}")
     # stats = pd.read_csv(context["templates_dict"]["stats_path"])
     # email_stats(stats, email=email)
 
@@ -47,9 +47,9 @@ def __calculate_stats(**context):
 _calculate_stats =PythonOperator(
     task_id ="calculate_Stats",
     python_callable=__calculate_stats,
-    template_dict={
-        "input_path": "/tmp/data/events_{{ds}}.json",
-        "output_path": "/tmp/data/events_{{ds}}.csv",
+    templates_dict={
+        "input_path":"/tmp/data/events_{{ds}}.json",
+        "output_path":"/tmp/data/output_{{ds}}.csv"
     },
     dag=dag,
 )

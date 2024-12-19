@@ -310,3 +310,568 @@ airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOper
 **kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
 [2024-12-19T21:48:49.200+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
 [2024-12-19T21:48:49.211+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.023 seconds
+[2024-12-19T21:49:19.409+0000] {processor.py:186} INFO - Started process (PID=858) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:49:19.410+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:49:19.412+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:49:19.411+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:49:19.417+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:49:19.416+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:49:19.418+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:49:19.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.025 seconds
+[2024-12-19T21:49:49.602+0000] {processor.py:186} INFO - Started process (PID=925) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:49:49.602+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:49:49.603+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:49:49.603+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:49:49.608+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:49:49.607+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:49:49.608+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:49:49.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.018 seconds
+[2024-12-19T21:50:19.946+0000] {processor.py:186} INFO - Started process (PID=992) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:50:19.947+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:50:19.949+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:50:19.948+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:50:19.952+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:50:19.951+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:50:19.952+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:50:19.959+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.015 seconds
+[2024-12-19T21:50:50.163+0000] {processor.py:186} INFO - Started process (PID=1058) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:50:50.164+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:50:50.166+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:50:50.166+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:50:50.172+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:50:50.170+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:50:50.172+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:50:50.182+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.023 seconds
+[2024-12-19T21:51:20.558+0000] {processor.py:186} INFO - Started process (PID=1125) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:51:20.559+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:51:20.561+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:51:20.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:51:20.568+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:51:20.566+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:51:20.568+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:51:20.580+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.027 seconds
+[2024-12-19T21:51:50.934+0000] {processor.py:186} INFO - Started process (PID=1192) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:51:50.936+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:51:50.939+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:51:50.938+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:51:50.945+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:51:50.943+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:51:50.945+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:51:50.956+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.027 seconds
+[2024-12-19T21:52:20.230+0000] {processor.py:186} INFO - Started process (PID=1259) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:52:20.232+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:52:20.233+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:52:20.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:52:20.241+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:52:20.240+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:52:20.242+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:52:20.254+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.028 seconds
+[2024-12-19T21:52:50.560+0000] {processor.py:186} INFO - Started process (PID=1326) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:52:50.561+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:52:50.562+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:52:50.562+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:52:50.570+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:52:50.568+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:52:50.572+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:52:50.580+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.022 seconds
+[2024-12-19T21:53:08.995+0000] {processor.py:186} INFO - Started process (PID=1341) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:53:08.996+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:53:08.997+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:53:08.997+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:53:09.004+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:53:09.003+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/output_{{ds}}.csv'}}
+[2024-12-19T21:53:09.005+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:53:09.015+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.024 seconds
+[2024-12-19T21:53:39.497+0000] {processor.py:186} INFO - Started process (PID=1408) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:53:39.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:53:39.501+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:53:39.501+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:53:39.507+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:53:39.505+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/output_{{ds}}.csv'}}
+[2024-12-19T21:53:39.507+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:53:39.519+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.027 seconds
+[2024-12-19T21:54:10.027+0000] {processor.py:186} INFO - Started process (PID=1475) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:10.027+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:54:10.029+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:10.029+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:10.033+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:10.032+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/output_{{ds}}.csv'}}
+[2024-12-19T21:54:10.034+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:10.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.019 seconds
+[2024-12-19T21:54:40.573+0000] {processor.py:186} INFO - Started process (PID=1542) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:40.575+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:54:40.577+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:40.577+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:40.584+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:40.582+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/output_{{ds}}.csv'}}
+[2024-12-19T21:54:40.585+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:40.596+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.029 seconds
+[2024-12-19T21:54:41.604+0000] {processor.py:186} INFO - Started process (PID=1543) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:41.606+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:54:41.609+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.609+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:41.618+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:54:41.670+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.670+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:atomic_idm
+[2024-12-19T21:54:41.673+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.673+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:atomic_idm
+[2024-12-19T21:54:41.674+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.674+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:atomic_idm
+[2024-12-19T21:54:41.675+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.675+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:atomic_idm
+[2024-12-19T21:54:41.677+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.677+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:atomic_idm
+[2024-12-19T21:54:41.679+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.678+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:atomic_idm
+[2024-12-19T21:54:41.681+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.681+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:atomic_idm
+[2024-12-19T21:54:41.681+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.681+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:54:41.686+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.686+0000] {dag.py:3262} INFO - Creating ORM DAG for atomic_idm
+[2024-12-19T21:54:41.690+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:54:41.690+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-11-19 00:00:00+00:00, run_after=2024-11-20 00:00:00+00:00
+[2024-12-19T21:54:41.697+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.099 seconds
+[2024-12-19T21:55:11.872+0000] {processor.py:186} INFO - Started process (PID=1610) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:55:11.873+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:55:11.875+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:55:11.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:55:11.881+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:55:11.892+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:55:11.892+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:55:11.902+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:55:11.902+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-11-19 00:00:00+00:00, run_after=2024-11-20 00:00:00+00:00
+[2024-12-19T21:55:11.908+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.040 seconds
+[2024-12-19T21:55:42.158+0000] {processor.py:186} INFO - Started process (PID=1715) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:55:42.161+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:55:42.166+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:55:42.166+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:55:42.176+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:55:42.189+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:55:42.189+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:55:42.202+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:55:42.202+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:55:42.209+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.058 seconds
+[2024-12-19T21:56:12.561+0000] {processor.py:186} INFO - Started process (PID=1782) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:12.563+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:56:12.564+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:12.564+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:12.570+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:12.579+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:12.579+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:56:12.587+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:12.587+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:56:12.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.035 seconds
+[2024-12-19T21:56:14.603+0000] {processor.py:186} INFO - Started process (PID=1783) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:14.604+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:56:14.606+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:14.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:14.616+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:14.662+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:14.662+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:56:14.670+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:14.670+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:56:14.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.079 seconds
+[2024-12-19T21:56:45.141+0000] {processor.py:186} INFO - Started process (PID=1850) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:45.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:56:45.145+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:45.145+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:45.152+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:56:45.165+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:45.165+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:56:45.177+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:56:45.176+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:56:45.183+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.048 seconds
+[2024-12-19T21:57:15.611+0000] {processor.py:186} INFO - Started process (PID=1917) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:15.612+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:57:15.614+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:15.614+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:15.621+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:15.631+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:15.631+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:57:15.641+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:15.641+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:57:15.648+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.043 seconds
+[2024-12-19T21:57:45.914+0000] {processor.py:186} INFO - Started process (PID=1984) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:45.917+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:57:45.919+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:45.919+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:45.926+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:45.938+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:45.938+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:57:45.948+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:45.948+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:57:45.954+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.045 seconds
+[2024-12-19T21:57:47.966+0000] {processor.py:186} INFO - Started process (PID=1985) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:47.967+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:57:47.969+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:47.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:47.978+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:57:48.023+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:48.023+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:57:48.031+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:57:48.030+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:57:48.037+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.076 seconds
+[2024-12-19T21:58:18.455+0000] {processor.py:186} INFO - Started process (PID=2052) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:58:18.457+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:58:18.459+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:58:18.459+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:58:18.467+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:58:18.480+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:58:18.480+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:58:18.491+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:58:18.491+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:58:18.497+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.048 seconds
+[2024-12-19T21:58:48.882+0000] {processor.py:186} INFO - Started process (PID=2119) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:58:48.884+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:58:48.886+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:58:48.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:58:48.892+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:58:48.904+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:58:48.904+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:58:48.915+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:58:48.915+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:58:48.921+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.044 seconds
+[2024-12-19T21:59:19.137+0000] {processor.py:186} INFO - Started process (PID=2186) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:59:19.138+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:59:19.142+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:59:19.141+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:59:19.151+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:59:19.160+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:59:19.160+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:59:19.169+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:59:19.169+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:59:19.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.075 seconds
+[2024-12-19T21:59:40.495+0000] {processor.py:186} INFO - Started process (PID=2253) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:59:40.497+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:59:40.499+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:59:40.499+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:59:40.507+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:59:40.581+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:59:40.581+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T21:59:40.591+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:59:40.591+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T21:59:40.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.114 seconds
+[2024-12-19T22:00:10.846+0000] {processor.py:186} INFO - Started process (PID=2320) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:10.847+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:00:10.849+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:10.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:10.856+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:10.871+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:10.871+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:00:10.881+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:10.881+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:00:10.888+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.047 seconds
+[2024-12-19T22:00:26.741+0000] {processor.py:186} INFO - Started process (PID=2373) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:26.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:00:26.744+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:26.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:26.750+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:26.809+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:26.809+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:00:26.821+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:26.821+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:00:26.941+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.203 seconds
+[2024-12-19T22:00:57.005+0000] {processor.py:186} INFO - Started process (PID=2440) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:57.006+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:00:57.008+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:57.008+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:57.015+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:00:57.027+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:57.027+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:00:57.037+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:00:57.037+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:00:57.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.043 seconds
+[2024-12-19T22:01:27.336+0000] {processor.py:186} INFO - Started process (PID=2507) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:01:27.336+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:01:27.337+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:01:27.337+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:01:27.341+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:01:27.347+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:01:27.347+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:01:27.354+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:01:27.354+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:01:27.359+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.025 seconds
+[2024-12-19T22:01:58.018+0000] {processor.py:186} INFO - Started process (PID=2558) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:01:58.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:01:58.023+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:01:58.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:01:58.026+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:01:58.037+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:01:58.037+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:01:58.046+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:01:58.046+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:01:58.053+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.038 seconds
+[2024-12-19T22:02:28.095+0000] {processor.py:186} INFO - Started process (PID=2589) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:28.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:02:28.100+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:28.099+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:28.108+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:28.118+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:28.118+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:02:28.131+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:28.131+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:02:28.140+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.051 seconds
+[2024-12-19T22:02:33.989+0000] {processor.py:186} INFO - Started process (PID=2648) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:33.990+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:02:33.993+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:33.993+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:34.004+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:34.163+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:34.162+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:02:34.169+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:34.169+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:02:34.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.193 seconds
+[2024-12-19T22:02:59.463+0000] {processor.py:186} INFO - Started process (PID=2657) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:59.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:02:59.469+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:59.469+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:59.490+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:02:59.498+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:59.498+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:02:59.513+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:02:59.513+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:02:59.524+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.069 seconds
+[2024-12-19T22:03:29.867+0000] {processor.py:186} INFO - Started process (PID=2724) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:03:29.868+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:03:29.870+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:03:29.870+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:03:29.880+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:03:29.931+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:03:29.930+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:03:29.940+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:03:29.939+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:03:30.040+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.179 seconds
+[2024-12-19T22:04:00.294+0000] {processor.py:186} INFO - Started process (PID=2791) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:00.296+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:04:00.298+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:00.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:00.302+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:00.313+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:00.313+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:04:00.325+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:00.324+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:04:00.425+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.133 seconds
+[2024-12-19T22:04:22.710+0000] {processor.py:186} INFO - Started process (PID=2858) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:22.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:04:22.712+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:22.712+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:22.722+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:22.739+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:22.738+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:04:22.751+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:22.751+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:04:22.770+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.063 seconds
+[2024-12-19T22:04:52.897+0000] {processor.py:186} INFO - Started process (PID=2925) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:52.898+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:04:52.899+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:52.899+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:52.903+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:04:52.912+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:52.912+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:04:52.922+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:04:52.922+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:04:52.928+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.035 seconds
+[2024-12-19T22:05:23.477+0000] {processor.py:186} INFO - Started process (PID=2992) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:05:23.478+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:05:23.479+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:05:23.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:05:23.484+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:05:23.493+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:05:23.493+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:05:23.503+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:05:23.503+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:05:23.509+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.035 seconds
+[2024-12-19T22:05:31.583+0000] {processor.py:186} INFO - Started process (PID=2999) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:05:31.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:05:31.587+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:05:31.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:05:31.596+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:05:31.743+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:05:31.743+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:05:31.749+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:05:31.749+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:05:31.755+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.177 seconds
+[2024-12-19T22:06:01.985+0000] {processor.py:186} INFO - Started process (PID=3066) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:06:01.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:06:01.989+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:06:01.989+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:06:01.996+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:06:02.008+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:06:02.008+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:06:02.019+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:06:02.019+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:06:02.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.046 seconds
+[2024-12-19T22:06:32.783+0000] {processor.py:186} INFO - Started process (PID=3133) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:06:32.784+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:06:32.785+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:06:32.785+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:06:32.791+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:06:32.802+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:06:32.802+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:06:32.812+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:06:32.812+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:06:32.819+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.041 seconds
+[2024-12-19T22:07:02.980+0000] {processor.py:186} INFO - Started process (PID=3200) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:02.981+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:07:02.982+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:02.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:02.986+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:02.993+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:02.993+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:07:03.001+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:03.001+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:07:03.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.030 seconds
+[2024-12-19T22:07:22.085+0000] {processor.py:186} INFO - Started process (PID=3261) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:22.086+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:07:22.087+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:22.087+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:22.095+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:22.141+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:22.141+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:07:22.148+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:22.148+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:07:22.154+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.075 seconds
+[2024-12-19T22:07:52.438+0000] {processor.py:186} INFO - Started process (PID=3328) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:52.440+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:07:52.442+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:52.442+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:52.449+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:07:52.462+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:52.462+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:07:52.472+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:07:52.472+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:07:52.479+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.046 seconds
+[2024-12-19T22:08:10.250+0000] {processor.py:186} INFO - Started process (PID=3387) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:10.252+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:08:10.253+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:10.253+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:10.259+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:10.308+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:10.308+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:08:10.325+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:10.325+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:08:10.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.087 seconds
+[2024-12-19T22:08:24.616+0000] {processor.py:186} INFO - Started process (PID=3396) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:24.618+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:08:24.620+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:24.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:24.627+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:24.634+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:24.634+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:08:24.646+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:24.646+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:08:24.654+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.044 seconds
+[2024-12-19T22:08:54.935+0000] {processor.py:186} INFO - Started process (PID=3463) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:54.938+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T22:08:54.940+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:54.939+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:54.946+0000] {processor.py:925} INFO - DAG(s) 'atomic_idm' retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T22:08:54.994+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:54.994+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T22:08:55.001+0000] {logging_mixin.py:190} INFO - [2024-12-19T22:08:55.001+0000] {dag.py:4180} INFO - Setting next_dagrun for atomic_idm to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T22:08:55.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.076 seconds
