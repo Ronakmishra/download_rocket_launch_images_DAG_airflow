@@ -284,6 +284,11 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+  events_api:
+    build: ./docker/events_api/
+    image: manning-airflow/events_api
+    ports:
+      - "5001:5000"
 
 volumes:
   postgres-db-volume:

@@ -1,0 +1,28 @@
+[2024-12-02T23:43:51.595+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-02T23:43:51.625+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: incremental_data_processing.calculate_stats scheduled__2024-12-02T18:00:00+00:00 [queued]>
+[2024-12-02T23:43:51.642+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: incremental_data_processing.calculate_stats scheduled__2024-12-02T18:00:00+00:00 [queued]>
+[2024-12-02T23:43:51.648+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-02T23:43:51.695+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): calculate_stats> on 2024-12-02 18:00:00+00:00
+[2024-12-02T23:43:51.708+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=679) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-02T23:43:51.710+0000] {standard_task_runner.py:72} INFO - Started process 725 to run task
+[2024-12-02T23:43:51.709+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'incremental_data_processing', 'calculate_stats', 'scheduled__2024-12-02T18:00:00+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/incremental_data_processing.py', '--cfg-path', '/tmp/tmpk2hiv2xx']
+[2024-12-02T23:43:51.711+0000] {standard_task_runner.py:105} INFO - Job 136: Subtask calculate_stats
+[2024-12-02T23:43:51.774+0000] {task_command.py:467} INFO - Running <TaskInstance: incremental_data_processing.calculate_stats scheduled__2024-12-02T18:00:00+00:00 [running]> on host 91648beb4ae9
+[2024-12-02T23:43:51.866+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='incremental_data_processing' AIRFLOW_CTX_TASK_ID='calculate_stats' AIRFLOW_CTX_EXECUTION_DATE='2024-12-02T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-02T18:00:00+00:00'
+[2024-12-02T23:43:51.868+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-02T23:43:51.869+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-02T23:43:51.869+0000] {logging_mixin.py:190} INFO - Current task name:calculate_stats state:running start_date:2024-12-02 23:43:51.626521+00:00
+[2024-12-02T23:43:51.869+0000] {logging_mixin.py:190} INFO - Dag name:incremental_data_processing and current dag run status:running
+[2024-12-02T23:43:51.870+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-02T23:43:51.902+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-02T23:43:51.916+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-02T23:43:51.920+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=incremental_data_processing, task_id=calculate_stats, run_id=scheduled__2024-12-02T18:00:00+00:00, execution_date=20241202T180000, start_date=20241202T234351, end_date=20241202T234351
+[2024-12-02T23:43:51.933+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-02T23:43:51.934+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-02T23:43:51.934+0000] {logging_mixin.py:190} INFO - Dag name:incremental_data_processing queued_at:2024-12-02 23:43:46.510120+00:00
+[2024-12-02T23:43:51.934+0000] {logging_mixin.py:190} INFO - Task hostname:91648beb4ae9 operator:PythonOperator
+[2024-12-02T23:43:51.979+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-02T23:43:52.001+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-02T23:43:52.003+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
