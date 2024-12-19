@@ -1,0 +1,312 @@
+[2024-12-19T21:43:24.687+0000] {processor.py:186} INFO - Started process (PID=46) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:43:24.689+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:43:24.693+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:43:24.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:43:24.706+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:43:24.704+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:43:24.706+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:43:24.726+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.046 seconds
+[2024-12-19T21:43:55.357+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:43:55.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:43:55.363+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:43:55.362+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:43:55.383+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:43:55.379+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:43:55.384+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:43:55.403+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.052 seconds
+[2024-12-19T21:44:26.240+0000] {processor.py:186} INFO - Started process (PID=188) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:44:26.241+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:44:26.243+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:44:26.242+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:44:26.249+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:44:26.247+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:44:26.249+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:44:26.263+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.028 seconds
+[2024-12-19T21:44:56.844+0000] {processor.py:186} INFO - Started process (PID=255) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:44:56.846+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:44:56.847+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:44:56.847+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:44:56.856+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:44:56.852+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:44:56.857+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:44:56.867+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.029 seconds
+[2024-12-19T21:45:27.324+0000] {processor.py:186} INFO - Started process (PID=322) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:45:27.327+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:45:27.330+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:45:27.329+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:45:27.342+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:45:27.338+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:45:27.343+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:45:27.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.041 seconds
+[2024-12-19T21:45:57.747+0000] {processor.py:186} INFO - Started process (PID=389) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:45:57.749+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:45:57.751+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:45:57.750+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:45:57.761+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:45:57.760+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:45:57.762+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:45:57.777+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.035 seconds
+[2024-12-19T21:46:27.973+0000] {processor.py:186} INFO - Started process (PID=456) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:46:27.976+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:46:27.978+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:46:27.978+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:46:27.988+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:46:27.983+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:46:27.988+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:46:28.001+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.036 seconds
+[2024-12-19T21:46:58.267+0000] {processor.py:186} INFO - Started process (PID=523) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:46:58.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:46:58.271+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:46:58.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:46:58.279+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:46:58.278+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:46:58.279+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:46:58.292+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.031 seconds
+[2024-12-19T21:47:28.522+0000] {processor.py:186} INFO - Started process (PID=590) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:47:28.524+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:47:28.526+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:47:28.526+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:47:28.534+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:47:28.532+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:47:28.536+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:47:28.548+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.033 seconds
+[2024-12-19T21:47:58.717+0000] {processor.py:186} INFO - Started process (PID=657) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:47:58.719+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:47:58.721+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:47:58.721+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:47:58.732+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:47:58.726+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:47:58.732+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:47:58.741+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.030 seconds
+[2024-12-19T21:48:18.951+0000] {processor.py:186} INFO - Started process (PID=724) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:48:18.953+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:48:18.954+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:48:18.954+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:48:18.961+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:48:18.960+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:48:18.961+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:48:18.972+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.025 seconds
+[2024-12-19T21:48:49.192+0000] {processor.py:186} INFO - Started process (PID=791) to work on /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:48:49.193+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atomicity_idempotency.py for tasks to queue
+[2024-12-19T21:48:49.195+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:48:49.194+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:48:49.200+0000] {logging_mixin.py:190} INFO - [2024-12-19T21:48:49.199+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atomicity_idempotency.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atomicity_idempotency.py", line 47, in <module>
+    _calculate_stats =PythonOperator(
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 501, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 949, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: calculate_Stats). Invalid arguments were:
+**kwargs: {'template_dict': {'input_path': '/tmp/data/events_{{ds}}.json', 'output_path': '/tmp/data/events_{{ds}}.csv'}}
+[2024-12-19T21:48:49.200+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atomicity_idempotency.py
+[2024-12-19T21:48:49.211+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atomicity_idempotency.py took 0.023 seconds
