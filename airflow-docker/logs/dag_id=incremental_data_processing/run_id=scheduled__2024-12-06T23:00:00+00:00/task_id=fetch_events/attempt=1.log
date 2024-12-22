@@ -1,34 +1,0 @@
-[2024-12-19T21:43:31.193+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
-[2024-12-19T21:43:31.259+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: incremental_data_processing.fetch_events scheduled__2024-12-06T23:00:00+00:00 [queued]>
-[2024-12-19T21:43:31.278+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: incremental_data_processing.fetch_events scheduled__2024-12-06T23:00:00+00:00 [queued]>
-[2024-12-19T21:43:31.282+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
-[2024-12-19T21:43:31.849+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): fetch_events> on 2024-12-06 23:00:00+00:00
-[2024-12-19T21:43:31.873+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=67) is multi-threaded, use of fork() may lead to deadlocks in the child.
-  pid = os.fork()
-
-[2024-12-19T21:43:31.880+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'incremental_data_processing', 'fetch_events', 'scheduled__2024-12-06T23:00:00+00:00', '--job-id', '162', '--raw', '--subdir', 'DAGS_FOLDER/incremental_data_processing.py', '--cfg-path', '/tmp/tmpv1xu5wmy']
-[2024-12-19T21:43:31.886+0000] {standard_task_runner.py:72} INFO - Started process 114 to run task
-[2024-12-19T21:43:31.886+0000] {standard_task_runner.py:105} INFO - Job 162: Subtask fetch_events
-[2024-12-19T21:43:32.250+0000] {task_command.py:467} INFO - Running <TaskInstance: incremental_data_processing.fetch_events scheduled__2024-12-06T23:00:00+00:00 [running]> on host 447a91cba43e
-[2024-12-19T21:43:32.615+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='incremental_data_processing' AIRFLOW_CTX_TASK_ID='fetch_events' AIRFLOW_CTX_EXECUTION_DATE='2024-12-06T23:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-06T23:00:00+00:00'
-[2024-12-19T21:43:32.619+0000] {logging_mixin.py:190} INFO - Task instance is in running state
-[2024-12-19T21:43:32.620+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
-[2024-12-19T21:43:32.621+0000] {logging_mixin.py:190} INFO - Current task name:fetch_events state:running start_date:2024-12-19 21:43:31.263310+00:00
-[2024-12-19T21:43:32.623+0000] {logging_mixin.py:190} INFO - Dag name:incremental_data_processing and current dag run status:running
-[2024-12-19T21:43:32.630+0000] {taskinstance.py:731} INFO - ::endgroup::
-[2024-12-19T21:43:32.648+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
-[2024-12-19T21:43:32.652+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -o /tmp/data/events.json_2024-12-06 http://events_api:5000/events?start_date=2024-12-01&end_date=2024-12-02start_date=2024-12-06&end_date=2024-12-07']
-[2024-12-19T21:43:32.681+0000] {subprocess.py:99} INFO - Output:
-[2024-12-19T21:43:32.712+0000] {subprocess.py:106} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-[2024-12-19T21:43:32.726+0000] {subprocess.py:106} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
-[2024-12-19T21:43:33.624+0000] {subprocess.py:106} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1086k  100 1086k    0     0  1185k      0 --:--:-- --:--:-- --:--:-- 1185k
-[2024-12-19T21:43:33.628+0000] {subprocess.py:110} INFO - Command exited with return code 0
-[2024-12-19T21:43:33.667+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
-[2024-12-19T21:43:33.667+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=incremental_data_processing, task_id=fetch_events, run_id=scheduled__2024-12-06T23:00:00+00:00, execution_date=20241206T230000, start_date=20241219T214331, end_date=20241219T214333
-[2024-12-19T21:43:33.687+0000] {logging_mixin.py:190} INFO - Task instance in success state
-[2024-12-19T21:43:33.688+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
-[2024-12-19T21:43:33.689+0000] {logging_mixin.py:190} INFO - Dag name:incremental_data_processing queued_at:2024-12-19 21:43:25.038084+00:00
-[2024-12-19T21:43:33.689+0000] {logging_mixin.py:190} INFO - Task hostname:447a91cba43e operator:BashOperator
-[2024-12-19T21:43:33.718+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
-[2024-12-19T21:43:33.768+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
-[2024-12-19T21:43:33.777+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
