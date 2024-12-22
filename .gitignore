@@ -5,3 +5,4 @@ __pycache__/
 /airflow-docker/logs/
 *.log
 /airflow-docker/output/
+.DS_Store
