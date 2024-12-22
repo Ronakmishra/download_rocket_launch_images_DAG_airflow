@@ -4,3 +4,4 @@ __pycache__/
 .env
 /airflow-docker/logs/
 *.log
+/airflow-docker/output/
