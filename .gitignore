@@ -6,4 +6,3 @@ __pycache__/
 *.log
 /airflow-docker/output/
 .DS_Store
-/.DS_Store
