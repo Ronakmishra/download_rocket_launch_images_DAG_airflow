@@ -6,6 +6,10 @@ Welcome to the **Airflow Concepts and Projects** repository! This repository ser
 
 ---
 
+## 📌 Notes and Learning Resources
+
+If you want to read about the concepts, refer to this link: [DataVidhya Course Notes & Resources](https://publish.obsidian.md/datavidhya/DataVidhya+Course+Notes+%26+Resources)
+
 ## 📚 About the Repository
 
 This repository includes:
@@ -29,30 +33,42 @@ This repository includes:
 
 ---
 
+### DAG Images Folder
+
+The `DAG_Images/` folder contains visual representations of DAGs, which illustrates the structure and dependencies of the DAGs.
+
+---
+
 ## 🚀 Getting Started
 
 To explore the DAGs in this repository and set up your own Airflow environment, follow the steps below:
 
 ### 1️⃣ Clone the Repository
 
-
 ### 2️⃣ Set Up Airflow
+
 Follow the official [Airflow installation guide](https://airflow.apache.org/docs/apache-airflow/stable/start.html) or use the provided `requirements.txt` file:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3️⃣ Add DAGs to Your Airflow Instance
+
 Copy the `dags/` folder content to the `dags` directory of your Airflow installation:
+
 ```bash
 cp -r dags/ /path/to/your/airflow/dags/
 ```
 
 ### 4️⃣ Run Airflow
+
 Ensure your Airflow services are running:
+
 ```bash
 airflow webserver & airflow scheduler
 ```
+
 Access the Airflow UI at `http://localhost:8080` to explore the imported DAGs.
 
 ---
@@ -68,12 +84,9 @@ Access the Airflow UI at `http://localhost:8080` to explore the imported DAGs.
 ## 📄 Contributing
 
 Contributions are welcome! If you'd like to improve this repository or add new concepts and projects:
+
 1. Fork this repository.
 2. Create a new branch (`git checkout -b feature/new-feature`).
 3. Commit your changes (`git commit -m 'Add a new feature'`).
 4. Push to the branch (`git push origin feature/new-feature`).
 5. Open a Pull Request.
-
-
-
-
